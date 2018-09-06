@@ -5,11 +5,12 @@ import shutil
 
 
 def download(url):
-    if os.path.isfile(os.path.basename(url)):
-        print(f'File : {file_name already exists')
+    file_name = os.path.basename(url)
+    if os.path.isfile(file_name):
+        print(f'File : {file_name} already exists')
     else:
-    os.system(f'wget {url}')
-    print(f'Downloading file: {file_name}')
+        os.system(f'wget {url}')
+        print(f'Downloading file: {file_name}')
 
 
 def get_url_from_config_file():
